@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="thirdDotTwo.MainController"
+      prefHeight="500">
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+   </padding>
+   <ChoiceBox fx:id="choiceBox" maxWidth="1.7976931348623157E308">
+      <VBox.margin>
+         <Insets bottom="10.0"/>
+      </VBox.margin>
+   </ChoiceBox>
+   <ListView fx:id="listView" VBox.vgrow="ALWAYS"/>
+   <Button fx:id="sortAscBtn" maxWidth="1.7976931348623157E308" mnemonicParsing="false"
+           text="Отсортировать по возрастанию">
+      <VBox.margin>
+         <Insets top="10.0"/>
+      </VBox.margin>
+   </Button>
+   <Button fx:id="sortDescBtn" layoutX="20.0" layoutY="255.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false"
+           text="Отсортировать по убыванию">
+      <VBox.margin>
+         <Insets top="10.0"/>
+      </VBox.margin>
+   </Button>
+   <Button fx:id="firstToLastBtn" layoutX="20.0" layoutY="305.0" maxWidth="1.7976931348623157E308"
+           mnemonicParsing="false" text="Поменять местами первый и последний элемент">
+      <VBox.margin>
+         <Insets top="10.0"/>
+      </VBox.margin>
+   </Button>
+   <Button fx:id="randBtn" layoutX="20.0" layoutY="255.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false"
+           text="Перемешать">
+      <VBox.margin>
+         <Insets top="10.0"/>
+      </VBox.margin>
+   </Button>
+</VBox>
