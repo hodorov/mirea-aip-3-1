@@ -20,7 +20,23 @@
         <VBox.margin>
             <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
         </VBox.margin>
-        <TextArea fx:id="area" minHeight="300.0" VBox.vgrow="ALWAYS"/>
+        <TextArea fx:id="area" minHeight="300.0" VBox.vgrow="ALWAYS">
+            <contextMenu>
+                <ContextMenu>
+                    <items>
+                        <Menu mnemonicParsing="false" text="Run">
+                            <MenuItem fx:id="calcContextMenu" mnemonicParsing="false" text="Рассчитать"/>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Edit">
+                            <MenuItem fx:id="clearContextMenu" mnemonicParsing="false" text="Очитстить поля ввода"/>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="File">
+                            <MenuItem fx:id="exitContextMenu" mnemonicParsing="false" text="Выход"/>
+                        </Menu>
+                    </items>
+                </ContextMenu>
+            </contextMenu>
+        </TextArea>
         <HBox layoutX="100.0" layoutY="66.0">
             <VBox.margin>
                 <Insets top="10.0"/>

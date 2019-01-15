@@ -1,10 +1,7 @@
 package first;
 
-import javafx.event.Event;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
-import javafx.scene.input.MouseEvent;
 
 public class MainController {
 
@@ -39,13 +36,25 @@ public class MainController {
     MenuItem exitMenu;
 
     @FXML
+    MenuItem calcContextMenu;
+
+    @FXML
+    MenuItem clearContextMenu;
+
+    @FXML
+    MenuItem exitContextMenu;
+
+    @FXML
     public void initialize() {
+        exitContextMenu.setOnAction(event -> System.exit(0));
         exitMenu.setOnAction(event -> System.exit(0));
         exitBtn.setOnMouseClicked(event -> System.exit(0));
 
+        clearContextMenu.setOnAction(event -> clear());
         clearMenu.setOnAction(event -> clear());
         clearBtn.setOnMouseClicked(event -> clear());
 
+        calcContextMenu.setOnAction(event -> calc());
         calcMenu.setOnAction(event -> calc());
         calcBtn.setOnMouseClicked(event -> calc());
     }
