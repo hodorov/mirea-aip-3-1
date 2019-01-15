@@ -1,4 +1,4 @@
-package thirdDotTwo;
+package thirdDotThree;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -11,7 +11,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("Main.fxml"));
-        primaryStage.setTitle("АиП 3.1, часть 3.2");
+        primaryStage.setTitle("АиП 3.1, часть 3.3");
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
     }
